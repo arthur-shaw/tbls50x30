@@ -1,0 +1,22 @@
+Package: tbls50x30
+Title: Create Monitoring Tables for 50x30 Surveys
+Version: 0.0.0.9000
+Authors@R: 
+    person("Arthur", "Shaw", , "jashaw2002@gmail.com", role = c("aut", "cre"))
+Description: Create field check tables to help in monitoring 50x30 surveys.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
+Imports: 
+    dplyr,
+    glue,
+    gt,
+    haven,
+    purrr,
+    rlang,
+    stringr,
+    susopara (>= 0.0.0.9000),
+    tidyselect
+Remotes: 
+    github::arthur-shaw/susopara

@@ -1,0 +1,30 @@
+url: ~
+template:
+  bootstrap: 5
+
+reference:
+- title: "Post-planting"
+  contents:
+  - parcels_per_hhold
+  - parcel_gps
+  - plots_per_parcel
+  - plot_use
+  - plot_gps
+  - crops_per_plot
+  - crop_types
+- title: "Post-harvest"
+  contents:
+  - temp_crop_harvest
+  - temp_crop_sales
+  - perm_crop_harvest
+  - perm_crop_sales
+  - livestock_ownership
+  - cow_displacement
+  - hen_displacement
+  - anim_prod_sales
+  - other_prod_sales
+  - process_crop_prod
+  - crop_labor
+  - livestock_labor_tbl
+  - sector_labor
+  - income_sources
