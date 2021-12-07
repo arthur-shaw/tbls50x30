@@ -5,6 +5,8 @@ Authors@R:
     person("Arthur", "Shaw", , "jashaw2002@gmail.com", role = c("aut", "cre"))
 Description: Create field check tables to help in monitoring 50x30 surveys.
 License: MIT + file LICENSE
+URL: https://github.com/arthur-shaw/tbls50x30,
+    https://arthur-shaw.github.io/tbls50x30
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.2
