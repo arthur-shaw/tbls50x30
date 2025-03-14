@@ -18,7 +18,7 @@
 #' 
 #' @importFrom rlang sym list2 .data
 #' @importFrom dplyr `%>%` left_join filter mutate group_by summarise across starts_with ungroup select
-#' @importFrom susopara parse_questionnaire extract_answer_options
+#' @importFrom susometa parse_questionnaire get_ms_answers_as_var_labels
 #' @importFrom gt gt html tab_header cols_label tab_spanner fmt_number
 #' 
 #' @export 
@@ -83,8 +83,8 @@ temp_crop_harvest <- function(
     )
 
     # ... from multi-select labels in JSON version of qnr
-    qnr <- susopara::parse_questionnaire(path = json_qnr_path)
-    col_lbls2 <- susopara::extract_answer_options(
+    qnr <- susometa::parse_questionnaire(path = json_qnr_path)
+    col_lbls2 <- susometa::get_ms_answers_as_var_labels(
         qnr_df = qnr, 
         varname = !!why_not_harvest_var
     )
