@@ -1,9 +1,8 @@
-url: https://arthur-shaw.github.io/tbls50x30
+url: https://arthur-shaw.github.io/tbls50x30/
 template:
   bootstrap: 5
-
 reference:
-- title: "Post-planting"
+- title: Post-planting
   contents:
   - parcels_per_hhold
   - parcel_gps
@@ -12,7 +11,7 @@ reference:
   - plot_gps
   - crops_per_plot
   - crop_types
-- title: "Post-harvest"
+- title: Post-harvest
   contents:
   - temp_crop_harvest
   - temp_crop_sales
@@ -28,3 +27,4 @@ reference:
   - livestock_labor_tbl
   - sector_labor
   - income_sources
+
