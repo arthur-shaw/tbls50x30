@@ -18,6 +18,9 @@
 #' @return Numeric vector. Values of a labelled variable.
 #' 
 #' @importFrom dplyr `%>%` pull
+#'
+#' @noRd
+#' @keywords internal
 extract_var_values <- function(
     df,
     var
@@ -45,6 +48,9 @@ extract_var_values <- function(
 #' @return Character vector. Character labels of a labelled variable.
 #' 
 #' @importFrom dplyr `%>%` pull
+#' 
+#' @noRd
+#' @keywords internal
 extract_var_labels <- function(
     df,
     var
@@ -71,6 +77,9 @@ extract_var_labels <- function(
 #' @importFrom stringr str_subset
 #' @importFrom purrr map
 #' @importFrom gt html
+#'
+#' @noRd
+#' @keywords internal
 create_col_labels <- function(
     labels,
     values,
@@ -104,6 +113,9 @@ create_col_labels <- function(
 #' @importFrom dplyr transmute
 #' @importFrom stringr str_replace
 #' @importFrom rlang `:=`
+#'
+#' @noRd
+#' @keywords internal
 create_dummies <- function(
     df,
     var
@@ -134,12 +146,15 @@ create_dummies <- function(
 #' @param df Data frame
 #' 
 #' @importFrom dplyr `%>%` mutate across 
+#'
+#' @noRd
+#' @keywords internal
 replace_nan <- function(df) {
 
     df %>%
     dplyr::mutate(
         dplyr::across(
-            .cols = where(is.numeric),
+            .cols = tidyselect::where(is.numeric),
             # note: using base::ifelse() rather than dplyr::if_else() to avoid type issues
             .fns = ~ ifelse(
                 test = is.nan(.x), 
@@ -161,6 +176,9 @@ replace_nan <- function(df) {
 #' @return Quosure
 #' 
 #' @importFrom rlang parse_quo global_env
+#'
+#' @noRd
+#' @keywords internal
 make_multi_select_quos <- function(
     varname,
     vals
@@ -190,7 +208,9 @@ make_multi_select_quos <- function(
 #' @param column_label_color Character. Hex color for column label background color.
 #' @param row_group_color  Character. Hex color for row group background color.
 #' 
-#' @export 
+#'
+#' @noRd
+#' @keywords internal
 style_table <- function(
     df, 
     heading_color = "#0F2B1D",

@@ -1300,7 +1300,7 @@ crop_labor <- function(
         dplyr::group_by(!!group_var) %>%
         dplyr::summarise(
             dplyr::across(
-                .cols = where(~ is.numeric(.x) | is.logical(.x)),
+                .cols = tidyselect::where(~ is.numeric(.x) | is.logical(.x)),
                 .fns = ~ sum(.x, na.rm = TRUE)
             )
         ) %>%
