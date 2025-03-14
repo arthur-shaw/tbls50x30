@@ -1,6 +1,6 @@
 Package: tbls50x30
 Title: Create Monitoring Tables for 50x30 Surveys
-Version: 0.0.0.9000
+Version: 0.0.0.9001
 Authors@R: 
     person("Arthur", "Shaw", , "jashaw2002@gmail.com", role = c("aut", "cre"))
 Description: Create field check tables to help in monitoring 50x30 surveys.
