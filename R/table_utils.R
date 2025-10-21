@@ -210,9 +210,12 @@ make_multi_select_quos <- function(
 #' 
 #' @param df Data frame
 #' @param heading_color Character. Hex color for table header background color.
-#' @param column_label_color Character. Hex color for column label background color.
+#' @param column_label_color Character. Hex color for column label background
+#' color.
 #' @param row_group_color  Character. Hex color for row group background color.
-#' 
+#'
+#' @importFrom dplyr `%>%`
+#' @importFrom gt tab_options sub_missing
 #'
 #' @noRd
 #' @keywords internal
@@ -231,6 +234,6 @@ style_table <- function(
         row_group.background.color = row_group_color
     ) %>%
     # replace NA with ---
-    gt::fmt_missing(columns = gt::everything())
+    gt::sub_missing(columns = gt::everything())
 
 }
