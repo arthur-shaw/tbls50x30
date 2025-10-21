@@ -131,7 +131,7 @@ parcels_per_hhold <- function(
 #' 
 #' @inherit parcels_per_hhold return
 #' 
-#' @importFrom rlang sym `!!` .data list2 as_name
+#' @importFrom rlang sym `!!` .env .data list2 as_name
 #' @importFrom dplyr `%>%` left_join mutate if_else group_by summarise n across ungroup starts_with matches
 #' @importFrom haven is_tagged_na
 #' @importFrom gt gt html tab_header cols_label tab_spanner fmt_number
@@ -163,10 +163,10 @@ parcel_gps <- function(
             not_measured = dplyr::if_else(
                 condition = (
                     # case 1: interviewer records not-recorded value
-                    (!!gps_var == .data$not_measured_val) | 
+                    (!!gps_var == .env$not_measured_val) |
                     # case 2: SuSo numeric missing value
                     # TODO: check whether this case is needed
-                    (!!gps_var == -999999999) | 
+                    (!!gps_var == -999999999) |
                     # case 3: SuSo's extended missing value for Stata
                     haven::is_tagged_na(!!gps_var)
                 ),
