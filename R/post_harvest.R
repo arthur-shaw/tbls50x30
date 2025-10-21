@@ -25,6 +25,7 @@
 temp_crop_harvest <- function(
     parcel_plot_crop_df,
     cases,
+    categories_df,
     crop_id_var,
     crop_vals,
     harvest_var,
@@ -1774,7 +1775,7 @@ income_sources <- function(
         dplyr::ungroup()
 
     stats <- cases %>% 
-        dplyr::left_join(hhold_stats, by = c("interview__id", "team")) %>%
+        dplyr::left_join(hhold_stats, by = c("interview__id")) %>%
         dplyr::left_join(temp_crop_stats, by = "interview__id") %>%
         dplyr::left_join(perm_crop_stats, by = "interview__id") %>%
         dplyr::left_join(processed_stats, by = "interview__id") %>%
