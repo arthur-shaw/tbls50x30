@@ -188,7 +188,12 @@ make_multi_select_quos <- function(
     # of the form `varname__1 == 1 | varname__7 == 1`
     expr_string <- paste0(
         varname, "__", 
-        ifelse(vals > 0, vals, gsub(x = vals, pattern = "-", replacement = "n")), " == 1", 
+        ifelse(
+            test = vals > 0,
+            yes = vals,
+            no = gsub(x = vals, pattern = "-", replacement = "n")
+        ),
+        " == 1",
         collapse = " | "
     )
 
