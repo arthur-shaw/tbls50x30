@@ -85,7 +85,8 @@ temp_crop_harvest <- function(
     # ... from multi-select labels in JSON version of qnr
     qnr <- susometa::parse_questionnaire(path = json_qnr_path)
     col_lbls2 <- susometa::get_ms_answers_as_var_labels(
-        qnr_df = qnr, 
+        qnr_df = qnr,
+        categories_df = categories_df,
         varname = !!why_not_harvest_var
     )
 
