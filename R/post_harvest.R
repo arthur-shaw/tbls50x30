@@ -6,6 +6,7 @@
 #' 
 #' @param parcel_plot_crop_df Data frame of parcel-plot-crop-level observations.
 #' @param cases Data frame of cases to include in analysis. Data frame must contain `interview__id` and the grouping variable indicated in the `group_var` parameter
+#' @param categories_df Data frame of reusable categories exported by susometa.
 #' @param crop_id_var Atomic character vector. Name of crop ID variable as a character.
 #' @param crop_vals Numeric vector. Codes of the crops that are temporary crops.
 #' @param harvest_var Atomic character vector. Name of variable indicating whether the crop was harvested.

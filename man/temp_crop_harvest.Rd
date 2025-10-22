@@ -7,6 +7,7 @@
 temp_crop_harvest(
   parcel_plot_crop_df,
   cases,
+  categories_df,
   crop_id_var,
   crop_vals,
   harvest_var,
@@ -20,6 +21,8 @@ temp_crop_harvest(
 \item{parcel_plot_crop_df}{Data frame of parcel-plot-crop-level observations.}
 
 \item{cases}{Data frame of cases to include in analysis. Data frame must contain \code{interview__id} and the grouping variable indicated in the \code{group_var} parameter}
+
+\item{categories_df}{Data frame of reusable categories exported by susometa.}
 
 \item{crop_id_var}{Atomic character vector. Name of crop ID variable as a character.}
 
