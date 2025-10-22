@@ -17,7 +17,7 @@ Imports:
     purrr,
     rlang,
     stringr,
-    susometa (>= 0.1.0),
+    susometa (>= 0.3.2),
     tidyselect
 Remotes: 
     github::lsms-worldbank/susometa
