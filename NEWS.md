@@ -1,3 +1,8 @@
+# tbls50x30 0.1.0
+
+- Fix bug in `parcel_gps()`
+- Use `gt`'s latest function for missing markers
+
 # tbls50x30 0.0.0.0001 (development version)
 
 - Use `{susometa}` to get labels from the questionnaire metadata. When `{susopara}` was split, `{susometa}` claimed all of the questionnaire metadata functions.
