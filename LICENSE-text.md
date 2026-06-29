@@ -1,0 +1,4 @@
+# License
+
+    YEAR: 2021
+    COPYRIGHT HOLDER: tbls50x30 authors

@@ -1,0 +1,65 @@
+# tbls50x30
+
+The goal of tbls50x30 is to create display tables for monitoring 50x30
+surveys.
+
+## Installation
+
+You can install the development version of tbls50x30 like so:
+
+``` r
+
+# install.packages("devtools")
+devtools::install_github("arthur-shaw/tbls50x30")
+```
+
+# Package index
+
+## Post-planting
+
+- [`parcels_per_hhold()`](https://arthur-shaw.github.io/tbls50x30/reference/parcels_per_hhold.md)
+  : Make parcels per household table
+- [`parcel_gps()`](https://arthur-shaw.github.io/tbls50x30/reference/parcel_gps.md)
+  : Make parcel GPS measurement table
+- [`plots_per_parcel()`](https://arthur-shaw.github.io/tbls50x30/reference/plots_per_parcel.md)
+  : Make plots per parcel table
+- [`plot_use()`](https://arthur-shaw.github.io/tbls50x30/reference/plot_use.md)
+  : Make plot use table
+- [`plot_gps()`](https://arthur-shaw.github.io/tbls50x30/reference/plot_gps.md)
+  : Make plot GPS measurement table
+- [`crops_per_plot()`](https://arthur-shaw.github.io/tbls50x30/reference/crops_per_plot.md)
+  : Make crops per plot table
+- [`crop_types()`](https://arthur-shaw.github.io/tbls50x30/reference/crop_types.md)
+  : Make crop types tables
+
+## Post-harvest
+
+- [`temp_crop_harvest()`](https://arthur-shaw.github.io/tbls50x30/reference/temp_crop_harvest.md)
+  : Create temporary crop harvest table
+- [`temp_crop_sales()`](https://arthur-shaw.github.io/tbls50x30/reference/temp_crop_sales.md)
+  : Create temprorary crop sales table
+- [`perm_crop_harvest()`](https://arthur-shaw.github.io/tbls50x30/reference/perm_crop_harvest.md)
+  : Create permanent crop harvest table
+- [`perm_crop_sales()`](https://arthur-shaw.github.io/tbls50x30/reference/perm_crop_sales.md)
+  : Create permanent crop sales table
+- [`livestock_ownership()`](https://arthur-shaw.github.io/tbls50x30/reference/livestock_ownership.md)
+  : Create livestock ownership table
+- [`cow_displacement()`](https://arthur-shaw.github.io/tbls50x30/reference/cow_displacement.md)
+  : Create cow displacement table
+- [`hen_displacement()`](https://arthur-shaw.github.io/tbls50x30/reference/hen_displacement.md)
+  : Create hen displacement table
+- [`anim_prod_sales()`](https://arthur-shaw.github.io/tbls50x30/reference/anim_prod_sales.md)
+  : Produces table for sales and production of milk or eggs
+- [`other_prod_sales()`](https://arthur-shaw.github.io/tbls50x30/reference/other_prod_sales.md)
+  : Create table on product production and sales
+- [`process_crop_prod()`](https://arthur-shaw.github.io/tbls50x30/reference/process_crop_prod.md)
+  : Create stats on crop processing
+- [`crop_labor()`](https://arthur-shaw.github.io/tbls50x30/reference/crop_labor.md)
+  : Create crop labor table
+- [`livestock_labor_tbl()`](https://arthur-shaw.github.io/tbls50x30/reference/livestock_labor_tbl.md)
+  : Create livestock labor table
+- [`sector_labor()`](https://arthur-shaw.github.io/tbls50x30/reference/sector_labor.md)
+  : Create table for sector labor
+- [`income_sources()`](https://arthur-shaw.github.io/tbls50x30/reference/income_sources.md)
+  : Create table of income sources
+
