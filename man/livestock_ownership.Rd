@@ -9,7 +9,9 @@ livestock_ownership(hhold_df, animal_var, cases, group_var)
 \arguments{
 \item{hhold_df}{Data frame.}
 
-\item{animal_var}{Atomic character vector. Name of livestock ownership variable, as it appears in Designer.}
+\item{animal_var}{Atomic character vector.
+Name of multi-select yes/no livestock ownership variable,
+as it appears in Designer.}
 
 \item{cases}{Data frame. Case to include in analysis}
 

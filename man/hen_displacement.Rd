@@ -19,7 +19,8 @@ hen_displacement(
 
 \item{cases}{Data frame. Case to include in analysis}
 
-\item{animal_var}{Atomic character vector. Name of livestock ownership variable, as it appears in Designer.}
+\item{animal_var}{Atomic character vector.
+Name of multi-select livestock ownership variable, as it appears in Designer.}
 
 \item{cock_val}{Atomic numeric vector. Value of cock/broiler answer option.}
 

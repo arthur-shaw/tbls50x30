@@ -37,7 +37,8 @@ anim_prod_sales(
 
 \item{sold_val}{Atomic numeric vector. Value to \code{sold_var} to indicate sales.}
 
-\item{amt_sold_vars}{Character vector. Name variable(s) that capture sales revenue. In some cases, a single variable; in others, one variable for total value, another for unit value.}
+\item{amt_sold_vars}{Character vector. Name variable(s) that capture sales revenue.
+In some cases, a single variable; in others, one variable for total value, another for unit value.}
 
 \item{amt_sold_dk_val}{Atomic numeric vector. Value of "do not know" (DK) option for sales revenue.}
 

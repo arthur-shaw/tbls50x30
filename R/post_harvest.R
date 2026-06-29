@@ -436,7 +436,9 @@ perm_crop_sales <- function(
 #' Create livestock ownership table
 #' 
 #' @param hhold_df Data frame. 
-#' @param animal_var Atomic character vector. Name of livestock ownership variable, as it appears in Designer.
+#' @param animal_var Atomic character vector.
+#' Name of multi-select yes/no livestock ownership variable,
+#' as it appears in Designer.
 #' @param cases Data frame. Case to include in analysis
 #' @param group_var Atomic character vector. Name of the grouping variable
 #' 
@@ -508,7 +510,9 @@ livestock_ownership <- function(
 #' 
 #' @param hhold_df Data frame. All household-level variables.
 #' @param cases Data frame. Case to include in analysis
-#' @param animal_var Atomic character vector. Name of livestock ownership variable, as it appears in Designer.
+#' @param animal_var Atomic character vector.
+#' Name of the mulit-select livestock ownership variable,
+#' as it appears in Designer.
 #' @param bull_val Atomic numeric vector. Value of bull answer option.
 #' @param cow_val Atomic numeric vector. Value of cow answer option.
 #' @param steer_heifer_val Atomic numeric vector. Value of steer/heifer answer option.
@@ -632,7 +636,8 @@ cow_displacement <- function(
 #' Create hen displacement table
 #' 
 #' @param hhold_df Data frame. All household-level variables.
-#' @param animal_var Atomic character vector. Name of livestock ownership variable, as it appears in Designer.
+#' @param animal_var Atomic character vector.
+#' Name of multi-select livestock ownership variable, as it appears in Designer.
 #' @param cases Data frame. Case to include in analysis
 #' @param cock_val Atomic numeric vector. Value of cock/broiler answer option.
 #' @param hen_val Atomic numeric vector. Value of hen answer option.
@@ -754,7 +759,8 @@ hen_displacement <- function(
 #' @param produced_val Atomic numeric vector. Value to `produced_var` to indicate production.
 #' @param sold_var Atomic character vector. Variable for egg/milk sales.
 #' @param sold_val Atomic numeric vector. Value to `sold_var` to indicate sales.
-#' @param amt_sold_vars Character vector. Name variable(s) that capture sales revenue. In some cases, a single variable; in others, one variable for total value, another for unit value.
+#' @param amt_sold_vars Character vector. Name variable(s) that capture sales revenue.
+#' In some cases, a single variable; in others, one variable for total value, another for unit value.
 #' @param amt_sold_dk_val Atomic numeric vector. Value of "do not know" (DK) option for sales revenue.
 #' @param group_var Atomic character vector. Name of the grouping variable
 #' @param table_title Atomic character vector. Title of the table.

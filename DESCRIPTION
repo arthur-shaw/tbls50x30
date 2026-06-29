@@ -8,7 +8,6 @@ License: MIT + file LICENSE
 URL: https://github.com/arthur-shaw/tbls50x30, https://arthur-shaw.github.io/tbls50x30, https://arthur-shaw.github.io/tbls50x30/
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.2
 Imports: 
     dplyr,
     glue,
@@ -21,3 +20,4 @@ Imports:
     tidyselect
 Remotes: 
     github::lsms-worldbank/susometa
+Config/roxygen2/version: 8.0.0
